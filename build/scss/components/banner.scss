@@ -1,0 +1,23 @@
+.banner {
+    margin: 8rem 0 0 0;
+
+    display: flex;
+}
+.banner__title {
+    margin: 0;
+    padding: 9rem 20rem;
+    background-image: url(../img/bg-header-title.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: $yellow;
+
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    strong {
+        font-size: 8rem;
+        font-weight: 600;
+    }
+}
