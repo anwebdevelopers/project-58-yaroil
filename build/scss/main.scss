@@ -9,29 +9,29 @@
 *:focus:-ms-input-placeholder      {color: transparent}
 
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #000;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #000;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #000;
 	opacity: 1;
 }
 
 *:-ms-input-placeholder {
-	color: #666;
+	color: #000;
 	opacity: 1;
 }
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	color: #666;
+	color: #000;
 }
 body input:required:valid,
 body textarea:required:valid {
-	color: #666;
+	color: #000;
 }
 *,
 *:before,
@@ -94,6 +94,18 @@ a {
 		color: #000;
 	}
 }
+.title {
+	margin: 0;
+	padding: 2.5rem 4rem;
+	font-size: 4rem;
+	line-height: 1;
+	text-transform: uppercase;
+	color: $orange;
+	font-family: 'Roboto Condensed';
+	background-image: url(../img/bg-tile.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
 
 @media only screen and (max-width : 1360px) {
     html {
@@ -132,6 +144,9 @@ a {
 //Custom Styles Here
 @import "components/header.scss";
 @import "components/banner.scss";
+@import "components/company.scss";
+@import "components/request.scss";
+
 
 //@import "build/scss/components/magnific-popup.scss";
 
@@ -140,7 +155,7 @@ a {
 
 //Load Libs SASS
 //@import "html/libs/animate/animate.sass";
-//@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";

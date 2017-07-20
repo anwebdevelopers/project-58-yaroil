@@ -1,23 +1,207 @@
 .banner {
-    margin: 8rem 0 0 0;
+    padding: 8rem 0;
 
     display: flex;
 }
+.banner__img {
+    z-index: 1;
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 0 -15% 0 0;
+    img {
+        display: inline-block !important;
+        vertical-align: top;
+        width: auto !important;
+        max-width: 100%;
+    }
+}
+.banner__content {
+    flex: 0 0 auto;
+    width: 85%;
+}
 .banner__title {
     margin: 0;
-    padding: 9rem 20rem;
+    padding: 9rem 8% 9rem 15%;
     background-image: url(../img/bg-header-title.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    color: $yellow;
+    color: $orange;
 
     font-size: 3rem;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
+    font-family: 'Roboto Condensed';
     text-transform: uppercase;
     strong {
         font-size: 8rem;
         font-weight: 600;
     }
+}
+.banner__text {
+    margin: 1rem 0 0 0;
+    font-size: 3.4rem;
+    line-height: 1.1;
+    font-weight: 300;
+    font-family: 'Roboto Condensed';
+    text-align: right;
+    b {
+        font-weight: 600;
+    }
+}
+.banner__button {
+    margin: 2rem 0 0 0;
+    text-align: right;
+    a {
+        @extend .button;
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: baseline;
+            margin: 0 0 0 .5rem;
+            border: .5rem solid transparent;
+            border-left-color: currentColor;
+        }
+    }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	animation-name: fadeIn;
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+.fadeOut {
+	animation-name: fadeOut;
+}
+.slider {
+    position: relative;
+    padding: 0 8rem;
+    .owl-nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 0;
+            width: 6rem;
+            height: 6rem;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
+            transition: all .5s ease;
+            &:hover, &:active {
+               border-color: $yellow;
+            }
+        }
+        .owl-prev {
+            left: 1rem;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .owl-next {
+            right: 1rem;
+            transform: translateY(-50%) rotate(-135deg);
+        }
+    }
+}
+.banner-slider {
+    @extend .slider;
+}
+
+@media only screen and (max-width : 1360px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .banner__title {
+        strong {
+            font-size: 7rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .banner__title {
+        strong {
+            font-size: 6rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .banner {
+        display: block;
+
+    }
+    .banner__content {
+        width: auto;
+        margin: 4rem 0 0 0;
+    }
+    .banner__img {
+        width: auto;
+        margin: 0;
+        text-align: center;
+    }
+    .banner__title {
+        padding: 8rem 12%;
+        text-align: center;
+        strong {
+            font-size: 5rem;
+        }
+    }
+    .banner__text {
+        text-align: center;
+    }
+    .banner__button {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .banner-slider {
+        padding: 0;
+        .owl-nav {
+            position: static;
+            text-align: center;
+            .owl-prev,
+            .owl-next {
+                position: static;
+                display: inline-block;
+                vertical-align: top;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+    .banner__title {
+        strong {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .banner__title {
+        padding: 8rem 8%;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
 }
