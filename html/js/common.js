@@ -26,17 +26,35 @@ $(function() {
     /*******************************************************/
     var $banner = $('.banner');
     if ($banner.length > 1) {
-        $banner.wrapAll('<div class="slider owl-carousel"></div>');
-
+        $banner.wrapAll('<div class="banner-slider owl-carousel"></div>');
     }
-    $('.slider').owlCarousel({
+    $('.banner-slider').owlCarousel({
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         loop: true,
         items: 1,
         nav: true,
         navText: '',
-        autoplayTimeout: 8000,
+        autoplayTimeout: 5000,
+        autoplay: true,
+        smartSpeed: 1200
+    });
+
+
+    /*******************************************************/
+    //production Slider
+    /*******************************************************/
+
+    var $productionItem = $('.production__item');
+    if ($productionItem.length > 1) {
+        $productionItem.wrapAll('<div class="production__slider owl-carousel"></div>');
+    }
+    $('.production__slider').owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true,
+        navText: '',
+        autoplayTimeout: 10000,
         autoplay: true,
         smartSpeed: 1200
     });

@@ -117,9 +117,11 @@
 .header__callback-button {
     @extend .button;
     flex: 0 0 auto;
+    display: block;
 }
 .header__callback-link {
     flex: 0 0 auto;
+    display: block;
     margin: 1rem 0 0 0;
     font-size: 2rem;
     text-decoration: none;

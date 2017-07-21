@@ -174,7 +174,7 @@
 }
 
 @media only screen and (max-width : 640px) {
-    .banner-slider {
+    .slider {
         padding: 0;
         .owl-nav {
             position: static;
@@ -186,6 +186,12 @@
                 vertical-align: top;
                 width: 4rem;
                 height: 4rem;
+            }
+            .owl-prev {
+                transform: rotate(45deg);
+            }
+            .owl-next {
+                transform: rotate(-135deg);
             }
         }
     }

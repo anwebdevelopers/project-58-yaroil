@@ -1,5 +1,5 @@
 .request {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     max-width: 99rem;
     margin: 8rem auto;
     border-left: 1px solid #a27007;
@@ -8,14 +8,18 @@
     text-align: center;
 }
 .request__title {
-    margin: 0;
-    font-size: 2.4rem;
+
+    
     color: $dark;
-    padding: 0 1.5rem;
     transform: translateY(-50%);
 
     display: flex;
     align-items: center;
+    h2 {
+        flex: 0 1 auto;
+        margin: 0;
+        font-size: 2.4rem;
+    }
     &:before, &:after {
         content: '';
         flex: 1 1 auto;
