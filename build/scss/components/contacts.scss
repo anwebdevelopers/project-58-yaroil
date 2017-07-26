@@ -1,0 +1,45 @@
+.contacts {
+    padding: 8rem 0;
+}
+.contacts__title {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+}
+.contacts__list {
+    padding: 0;
+    list-style: none;
+    max-width: 670px;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    li {
+        margin: 1rem 0 0 0;
+        address {
+            display: inline;
+            font-weight: 600;
+            font-style: normal;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            transition: all .5s ease;
+            &:hover, &:active {
+                color: $yellow;
+            }
+        }
+    }
+}
+.contacts__map-outer {
+    margin: 5rem 0 0 0;
+    height: 50rem;
+}
+.contacts__map-inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50rem;
+}

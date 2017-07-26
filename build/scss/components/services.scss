@@ -1,0 +1,104 @@
+.services {
+    padding: 8rem 0;
+}
+.services__title {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+}
+.services__text {
+    max-width: 670px;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+.services__slider {
+    @extend .slider;
+    margin: 8rem 0 0 0;
+
+    .owl-stage-outer {
+        border-radius: 1rem;
+        box-shadow: 0 3px 25px 0 transparentize(#09253e, 0.83);
+    }
+    .services__item {
+        margin: 0;
+        box-shadow: none;
+    }
+}
+.services__item {
+    margin: 5rem 0 0 0;
+    background-color: $orange;
+    border-radius: 1rem;
+    box-shadow: 0 3px 25px 0 transparentize(#09253e, 0.83);
+
+    display: flex;
+}
+.services__item-img {
+    flex: 0 0 auto;
+    width: 70%;
+    padding-bottom: 40%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.services__item-content {
+    flex: 0 0 auto;
+    width: 30%;
+    align-self: center;
+    padding: 4rem 2.5rem;
+}
+.services__item-title {
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+}
+.services__item-text {
+    margin: 2rem 0 0 0;
+}
+@media only screen and (max-width : 1360px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .services__item {
+        display: block;
+    }
+    .services__item-img {
+        width: auto;
+        padding-bottom: 60%;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    .services__item-content {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .services__slider {
+        .owl-nav {
+            margin: 4rem 0 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}

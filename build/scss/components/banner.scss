@@ -2,6 +2,7 @@
     padding: 8rem 0;
 
     display: flex;
+    flex-direction: row-reverse;
 }
 .banner__img {
     z-index: 1;
@@ -151,11 +152,11 @@
     }
     .banner__content {
         width: auto;
-        margin: 4rem 0 0 0;
+
     }
     .banner__img {
         width: auto;
-        margin: 0;
+        margin: 5rem 0 0 0;
         text-align: center;
     }
     .banner__title {

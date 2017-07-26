@@ -131,6 +131,39 @@
 		color: $yellow;
 	}
 }
+.header__breadcrumbs {
+    order: 4;
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem;
+    a, span {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
+    a {
+        padding: 0 1.5rem 0 0;
+        margin: 0 .5rem 0 0;
+        text-decoration: none;
+        color: currentColor;
+        transition: all .5s ease;
+        &:after {
+            content: '';
+            position: absolute;
+            top: .6rem;
+            right: 0;
+            width: .7rem;
+            height: .7rem;
+            transform: rotate(45deg);
+            border-top: 1px solid currentColor;
+            border-right: 1px solid currentColor;
+        }
+        &:hover, &:active {
+            color: $yellow;
+        }
+    }
+}
 @media only screen and (max-width : 1360px) {
     .header__nav {
         ul {
@@ -163,6 +196,10 @@
                 margin: 0 .5rem;
             }
         }
+    }
+    .header__breadcrumbs {
+        margin: 3rem 0 0 0;
+        text-align: center;
     }
 }
 

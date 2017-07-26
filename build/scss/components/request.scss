@@ -9,7 +9,7 @@
 }
 .request__title {
 
-    
+
     color: $dark;
     transform: translateY(-50%);
 
@@ -19,6 +19,8 @@
         flex: 0 1 auto;
         margin: 0;
         font-size: 2.4rem;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed';
     }
     &:before, &:after {
         content: '';

@@ -1,5 +1,127 @@
 .footer {
-    margin: 8rem 0 0 0;
+    padding: 8rem 0;
 
     display: flex;
+    justify-content: space-between;
+}
+.footer__category {
+    flex: 0 0 auto;
+    &:nth-child(1),
+    &:nth-child(3) {
+        width: 23%;
+    }
+    &:nth-child(2) {
+        width: 46%;
+        .footer__category-item {
+            width: 32%;
+        }
+    }
+    &:nth-child(1) {
+        .footer__category-item {
+            width: 48%;
+        }
+    }
+    &:nth-child(3) {
+        .footer__category-item {
+            width: 100%;
+        }
+    }
+}
+.footer__category-title {
+    margin: 0;
+    padding: 0 0 1rem 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid currentColor;
+}
+.footer__category-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__category-item {
+    flex: 0 0 auto;
+}
+.footer__category-item-title {
+    margin: 1rem 0 0 0;
+    font-size: 1.5rem;
+    color: #543800;
+}
+.footer__category-item-subtitle {
+    margin: 1rem 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer__category-item-list {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    li {
+        margin: 1rem 0 0 0;
+        a {
+            color: currentColor;
+            transition: all .5s ease;
+            &:hover, &:active {
+                color: $yellow;
+            }
+        }
+    }
+}
+.footer__copy {
+    margin: 16rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width : 1360px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer__category {
+        &:nth-child(2) {
+            order: -1;
+            width: 100%;
+        }
+        &:nth-child(1),
+        &:nth-child(3) {
+            width: 48%;
+            margin: 4rem 0 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+    .footer {
+        display: block;
+    }
+    .footer__category {
+        &:nth-child(2) {
+            order: 0;
+            width: auto;
+            margin: 4rem 0 0 0;
+        }
+        &:nth-child(1),
+        &:nth-child(3) {
+            width: auto;
+            margin: 4rem 0 0 0;
+        }
+    }
 }
