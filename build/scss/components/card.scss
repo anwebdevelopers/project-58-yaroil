@@ -1,0 +1,87 @@
+.card {
+    position: relative;
+    max-width: 87rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: #fff;
+
+    display: flex;
+}
+.card__img {
+    margin: 0;
+    flex: 0 0 auto;
+    align-self: center;
+    width: 40%;
+    padding: 4rem 4%;
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}
+.card__content {
+    flex: 0 0 auto;
+    width: 60%;
+    padding: 4rem 4%;
+    background-color: $yellow;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.card__category {
+    font-size: 1.6rem;
+    color: #5f4e07;
+}
+.card__title {
+    margin: 1rem 0 0 0;
+    font-size: 3.4rem;
+    font-family: 'Roboto Condensed';
+}
+.card__text {
+    margin: 2.5rem 0 0 0;
+    p {
+        margin-top: 2.5rem;
+    }
+}
+.card__button {
+    @extend .button;
+    margin: 3rem 0 0 0;
+    &:hover, &:active {
+        background-color: #fff;
+    }
+}
+@media only screen and (max-width : 1360px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .card {
+        display: block;
+    }
+    .card__img {
+        width: auto;
+    }
+    .card__content {
+        width: auto;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 2rem;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}
